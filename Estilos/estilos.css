@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: fuente;
+  src: url(../Fuente/Montserrat-Medium.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: fuente;
+  src: url(../Fuente/Montserrat-SemiBold.ttf);
+  font-weight: 700;
+}
+
+body {
+  font-family: fuente, sans-serif;
+  background-color: white;
+  color: #252525;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #f78f26;
+  margin: 0;
+  padding: 0;
+}
+
+a:link {
+  color: #f78f26;
+}
+a:visited {
+  color: #af5d10;
+}
+a:hover {
+  background-color: #eee;
+}
+a:active {
+  background-color: darkgoldenrod;
+}
+
+/*envolturas*/
+#envolturaGlobal {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+#envolturaCabezote {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#envolturaMiPerfil {
+  width: 100%;
+  margin: 0 auto;
+}
+#envolturaPortafolio {
+  width: 100%;
+  margin: 0 auto;
+}
+#envolturaDestacado {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+#envolturaFooter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+/*///////*Diagramacion/////////*/
+/*cabezote*/
+#cabezotePrincipal {
+  display: block;
+  clear: both;
+  float: left;
+  width: 100%;
+  min-height: 670px;
+  background-image: url(../Imagen/fondos/fondoHeader.jpg);
+  background-size: cover;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+#barraSuperior {
+  display: block;
+  clear: both;
+  float: left;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+#barraPrincipalNavegacion {
+  display: block;
+  clear: none;
+  float: left;
+  width: 60%;
+  min-height: 100px;
+}
+#barraPrincipalNavegacion ul {
+  list-style-type: none;
+}
+#barraPrincipalNavegacion ul li {
+  display: block;
+  clear: none;
+  float: left;
+}
+#barraPrincipalNavegacion ul li a:link,
+#barraPrincipalNavegacion ul li a:visited {
+  text-transform: uppercase;
+  color: #191919;
+  text-decoration: none;
+  padding: 0 15px;
+  height: 70px;
+  line-height: 70px;
+  transition: color 1s;
+}
+
+#barraPrincipalNavegacion ul li a:hover,
+#barraPrincipalNavegacion ul li a:active,
+#barraPrincipalNavegacion ul li#paginaActual a:link,
+#barraPrincipalNavegacion ul li#paginaActual a:visited {
+  color: #f78f26;
+  /*transition: color 1s;
+  transition: background-color 2s;*/
+
+  transition: all 1s;
+}
+
+#barraSuperior h1 {
+  display: block;
+  clear: none;
+  float: right;
+  width: 25%;
+  min-height: 100px;
+}
+#bannerPrincipal {
+  display: block;
+  clear: both;
+  float: left;
+  width: 90%;
+  padding: 5%;
+  padding-top: 80px;
+}
+#bannerPrincipal h2 {
+  margin-top: 15%;
+}
+
+#bannerPrincipal p {
+  width: 50%;
+  line-height: 26pt;
+}
+
+/*contenido principal*/
+#contenidoPrincipal {
+  display: block;
+  clear: both;
+  float: left;
+  width: 100%;
+  min-height: 200px;
+}
+#miPerfil {
+  display: block;
+  clear: both;
+  float: left;
+  width: 100%;
+  background-color: #443533;
+  color: #787878;
+}
+
+#miDescripcion {
+  display: block;
+  clear: none;
+  float: left;
+  width: 46%;
+  padding: 0 0 0 2%;
+  background-color: rgb(0, 0, 0);
+
+  background-image: url(../Imagen/fondos/fondoPerfil.png);
+  background-repeat: repeat-x;
+  background-position: 0 150%;
+  background-size: 100% 50%;
+}
+
+#miDescripcion #textosDescripcion {
+  width: 50%;
+  display: block;
+  clear: none;
+  float: left;
+}
+
+#miDescripcion h2 {
+  padding: 10% 0;
+}
+
+#miDescripcion p {
+  padding: 2% 0;
+  line-height: 2em;
+}
+
+#miDescripcion img {
+  width: 50%;
+  display: block;
+  clear: none;
+  float: right;
+}
+
+#habilidades {
+  display: block;
+  clear: none;
+  float: right;
+  width: 46%;
+  background-color: #443533;
+  color: #fff;
+  padding: 2%;
+}
+
+#habilidades table,
+#habilidades tr,
+#habilidades th,
+#habilidades td {
+  border-bottom: 1px solid #f78f26;
+  border-collapse: collapse;
+}
+#habilidades table {
+  width: 100%;
+  margin-top: 3%;
+}
+#habilidades table td {
+  padding: 3% 0;
+}
+#habilidades table tr:nth-child(2n-1) {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s;
+}
+#habilidades table tr:hover {
+  background-color: #f78f2686;
+  transition: all 0.3s;
+}
+#miPortafolio {
+  display: block;
+  clear: both;
+  float: left;
+  width: 96%;
+  background-color: #e0e0e0;
+  text-align: center;
+  padding: 2%;
+}
+#miPortafolio img {
+  max-width: 20%;
+  transition: all 0.5s;
+  filter: grayscale(100%);
+}
+
+#miPortafolio img:hover {
+  max-width: 20%;
+  filter: none;
+  transition: all 0.5s;
+}
+
+#miPortafolio h2,
+#proyectoDestacado h2 {
+  text-align: center;
+  color: #191919;
+  padding: 2% 0;
+  text-shadow: 1px 1px 3px #f78f26;
+}
+
+#proyectoDestacado {
+  display: block;
+  clear: both;
+  float: left;
+  width: 96%;
+  text-align: center;
+  padding: 5% 2%;
+
+  background-image: url(../Imagen/fondos/fondoPRoyecto.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+#proyectoDestacado p {
+  padding: 2% 0;
+}
+#proyectoDestacado iframe {
+  box-shadow: 2px 2px 5px gray;
+}
+/*footer*/
+#piePaginaPrincipal {
+  display: block;
+  clear: both;
+  float: left;
+  width: 100%;
+  min-height: 200px;
+  color: white;
+  background-color: white;
+  text-align: center;
+}
+#piePaginaPrincipal h2 {
+  padding: 2% 0;
+}
+
+#formularioContacto {
+  display: block;
+  clear: both;
+  float: left;
+  width: 50%;
+  background-color: #121212;
+  padding: 2% 25%;
+  text-align: center;
+}
+#formularioContacto form input,
+#formularioContacto form textarea {
+  width: 90%;
+  background-color: black;
+  font-size: 18pt;
+  border: solid 1px rgb(144, 143, 143);
+  padding: 2%;
+}
+#formularioContacto form input:focus,
+#formularioContacto form textarea:focus {
+  background-color: #f78f26;
+  color: white;
+}
+#formularioContacto form label {
+  padding-top: 5%;
+  margin-left: 3%;
+  color: rgb(135, 135, 149);
+  text-align: left;
+  float: left;
+}
+#formularioContacto h2 {
+  text-align: center;
+}
+#formularioContacto form button {
+  margin-top: 5%;
+  width: 200px;
+  height: 50px;
+  background-color: #f78f26;
+  color: white;
+  border: solid 1px #666;
+}
+#formularioContacto form button:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+#cierre {
+  display: block;
+  clear: both;
+  float: left;
+  width: 100%;
+  background-color: #303030;
+  padding: 1% 0%;
+}
+
+#enlaceRedes {
+  position: fixed;
+  bottom: 20px;
+  right: 5px;
+  color: #f78f26;
+}
+#enlaceRedes ul {
+  list-style-type: none;
+}
